@@ -37,7 +37,7 @@ class Rsvg extends Component
             $cmd .= " -h {$this->height}";
         }
 
-        $cmd .= " {$svgFilename} > {$outputFilename}";
+        $cmd .= " \"{$svgFilename}\" > \"{$outputFilename}\"";
 
         return shell_exec($cmd);
     }
